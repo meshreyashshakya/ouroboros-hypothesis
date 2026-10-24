@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Ouroboros Hypothesis</title>
+  <meta name="description" content="A hypothesis by Shreyash Shakya: the universe is a closed loop of scale, where the smallest thing in existence is also the largest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+
+  <header class="hero" id="hero">
+    <p class="eyebrow">A hypothesis by Shreyash Shakya</p>
+    <h1>The Ouroboros<br>Hypothesis</h1>
+    <p class="tagline">The smallest thing in existence is also the largest.</p>
+    <div class="scroll-hint"><span>Scroll to zoom out</span></div>
+  </header>
+
+  <div class="hud" id="hud" aria-live="polite">
+    <div class="hud-bar">
+      <span class="brand">The Ouroboros Hypothesis</span>
+      <span id="hud-zone">Zone I — Observed</span>
+    </div>
+    <div class="hud-stage">
+      <div class="ring">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle class="ring-track" cx="32" cy="32" r="28" />
+          <circle class="ring-progress" id="ring-progress" cx="32" cy="32" r="28" />
+        </svg>
+        <span class="ring-label"><b id="hud-index">01</b><small>/<span id="hud-total">33</span></small></span>
+      </div>
+      <div class="hud-text" id="hud-text">
+        <h2 id="hud-name">Atom</h2>
+        <p class="scale" id="hud-scale">1.00 × 10⁻¹⁰ m</p>
+        <p class="line" id="hud-line"></p>
+      </div>
+    </div>
+  </div>
+
+  <aside class="mirror" id="mirror" aria-live="polite">
+    <p class="eyebrow">Mirror</p>
+    <p class="mirror-pair"><span id="m-a"></span> <em>≡</em> <span id="m-b"></span></p>
+    <p class="mirror-scales"><span id="m-a-s"></span> <i>·</i> <span id="m-b-s"></span></p>
+    <p class="mirror-ratio" id="m-ratio"></p>
+    <p class="mirror-note" id="m-note"></p>
+    <p class="mirror-src" id="m-src"></p>
+  </aside>
+
+  <main>
+    <section class="journey" id="journey" aria-label="A journey across scales"></section>
+    <section class="after">
+      <p class="eyebrow">Phase 2 test</p>
+      <p class="after-title">The loop is closed. Content sections come next.</p>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
